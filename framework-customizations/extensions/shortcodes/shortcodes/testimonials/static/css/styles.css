@@ -1,0 +1,385 @@
+.getleads-testimonials {
+	position: relative;
+	margin: 40px 0;
+}
+.getleads-testimonials .getleads-testimonials-item {
+	position: relative;
+}
+.getleads-testimonials .getleads-testimonials-text {
+	font-size: 16.8px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	color: #262626;
+	line-height: 1.5em;
+}
+.getleads-testimonials .getleads-testimonials-text p {
+	margin-bottom: 1.4em;
+}
+.getleads-testimonials .getleads-testimonials-text p:last-child {
+	margin-bottom: 0;
+}
+.getleads-testimonials .prev,
+.getleads-testimonials .next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 40px;
+	text-align: center;
+	font-weight: normal;
+	color: #ababab;
+}
+.getleads-testimonials .prev:active,
+.getleads-testimonials .next:active {
+	margin-top: 1px;
+}
+.getleads-testimonials .prev:hover,
+.getleads-testimonials .next:hover {
+	color: #000000;
+	border-color: #000000;
+}
+.getleads-testimonials .prev i:before {
+	content: "\f104";
+}
+.getleads-testimonials .next i:before {
+	content: "\f105";
+}
+.getleads-testimonials .getleads-testimonials-pagination a {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #ababab;
+	overflow: hidden;
+	margin: 3px;
+	outline: none;
+}
+.getleads-testimonials .getleads-testimonials-pagination a span {
+	display: block;
+	text-indent: -300px;
+}
+.getleads-testimonials .getleads-testimonials-pagination a:hover,
+.getleads-testimonials .getleads-testimonials-pagination a.selected {
+	background-color: #000000;
+}
+.getleads-testimonials-1 {
+	text-align: center;
+	padding: 20px 0;
+}
+.getleads-testimonials-1 .getleads-testimonials-title {
+	font-family: 'Open Sans', sans-serif;
+}
+.getleads-testimonials-1 .getleads-testimonials-title:after {
+	content: "";
+	clear: both;
+	display: block;
+	margin: 10px auto;
+	width: 56px;
+	height: 2px;
+	border-top: 2px solid #000000;
+}
+.getleads-testimonials-1 .getleads-testimonials-item {
+	text-align: center;
+}
+.getleads-testimonials-1 .getleads-testimonials-avatar img {
+	margin: 0 auto;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+.getleads-testimonials-1 .getleads-testimonials-text {
+	text-align: center;
+	padding: 10px 10%;
+}
+.getleads-testimonials-1 .getleads-testimonials-author {
+	padding: 10px 0;
+}
+.getleads-testimonials-1 .getleads-testimonials-author .author-name {
+	font-weight: bold;
+}
+.getleads-testimonials-1 .getleads-testimonials-author em:before {
+	content: ", ";
+	margin-left: -3px;
+}
+.getleads-testimonials-1 .getleads-testimonials-author .getleads-testimonials-url:before {
+	content: ", ";
+	margin-left: -3px;
+}
+.getleads-testimonials-1 .prev,
+.getleads-testimonials-1 .next {
+	position: absolute;
+	z-index: 2;
+	top: 42%;
+	font-size: 30px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
+.getleads-testimonials-1 .prev i,
+.getleads-testimonials-1 .next i {
+	position: relative;
+	top: -1px;
+}
+.getleads-testimonials-1 .prev:active,
+.getleads-testimonials-1 .next:active {
+	margin-top: 1px;
+}
+.getleads-testimonials-1 .prev:hover,
+.getleads-testimonials-1 .next:hover {
+	color: #000000;
+	border-color: #000000;
+}
+.getleads-testimonials-1 .prev {
+	left: 1px;
+}
+.getleads-testimonials-1 .prev i {
+	left: -2px;
+}
+.getleads-testimonials-1 .prev i:before {
+	content: "\f104";
+}
+.getleads-testimonials-1 .next {
+	right: 1px;
+}
+.getleads-testimonials-1 .next i {
+	right: -2px;
+}
+.getleads-testimonials-1 .next i:before {
+	content: "\f105";
+}
+.getleads-testimonials-1 .getleads-testimonials-pagination {
+	text-align: center;
+	margin-top: 10px;
+}
+.getleads-testimonials-1.getleads-testimonials-1-2 .getleads-testimonials-meta {
+	display: table;
+	margin: 0 auto;
+}
+.getleads-testimonials-1.getleads-testimonials-1-2 .getleads-testimonials-meta > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+.getleads-testimonials-1.getleads-testimonials-1-2 .getleads-testimonials-avatar {
+	display: inline-block;
+}
+.getleads-testimonials-1.getleads-testimonials-1-2 .getleads-testimonials-author {
+	display: inline-block;
+	text-align: left;
+	padding-left: 10px;
+}
+.getleads-testimonials-2 .getleads-testimonials-text {
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 20px;
+	border: 1px solid #dadada;
+	margin-bottom: 15px;
+}
+.getleads-testimonials-2 .getleads-testimonials-text:before,
+.getleads-testimonials-2 .getleads-testimonials-text:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 45px;
+	border-style: solid;
+}
+.getleads-testimonials-2 .getleads-testimonials-text:before {
+	bottom: -11px;
+	margin-left: -1px;
+	border-width: 11px 11px 0 11px;
+	border-color: #dadada transparent transparent transparent;
+}
+.getleads-testimonials-2 .getleads-testimonials-text:after {
+	bottom: -10px;
+	border-width: 10px 10px 0 10px;
+	border-color: #ffffff transparent transparent  transparent;
+}
+.getleads-testimonials-2 .getleads-testimonials-meta {
+	display: table;
+	margin-left: 20px;
+}
+.getleads-testimonials-2 .getleads-testimonials-meta > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+.getleads-testimonials-2 .getleads-testimonials-avatar {
+	margin-right: 10px;
+}
+.getleads-testimonials-2 .getleads-testimonials-avatar img {
+	width: 70px;
+	height: 70px;
+	border: 1px solid #dadada;
+	padding: 5px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.getleads-testimonials-2 .getleads-testimonials-author {
+	padding: 0 0 0 20px;
+}
+.getleads-testimonials-2 .getleads-testimonials-author .author-name {
+	font-weight: bold;
+	display: block;
+}
+.getleads-testimonials-2 .getleads-testimonials-author em {
+	font-size: 90%;
+}
+.getleads-testimonials-2 .getleads-testimonials-author .getleads-testimonials-url {
+	display: block;
+	font-size: 90%;
+}
+.getleads-testimonials-2 .getleads-testimonials-arrows {
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	z-index: 2;
+}
+.getleads-testimonials-2 .getleads-testimonials-arrows a {
+	margin: 0 5px;
+	outline: none;
+}
+.getleads-testimonials-2 .getleads-testimonials-pagination {
+	position: absolute;
+	display: inline-block;
+	bottom: 22px;
+	right: 60px;
+	z-index: 2;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-text:before,
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-text:after {
+	left: auto;
+	right: 45px;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-text:before {
+	margin: 0 -1px 0 0;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-meta {
+	margin-right: 20px;
+	float: right;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-avatar {
+	float: right;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-author {
+	padding: 0 20px 0 0;
+	text-align: right;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-author .author-name {
+	font-weight: bold;
+	display: block;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-arrows {
+	right: auto;
+	left: 0;
+}
+.getleads-testimonials-2.getleads-testimonials-2-2 .getleads-testimonials-pagination {
+	right: auto;
+	left: 60px;
+}
+.getleads-testimonials-3 .getleads-testimonials-pagination {
+	display: none;
+}
+.getleads-testimonials-3 .getleads-testimonials-item {
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 20px;
+}
+.getleads-testimonials-3 .getleads-testimonials-item:before {
+	content: "”";
+	position: absolute;
+	z-index: 1;
+	left: 10px;
+	top: 0px;
+	line-height: 1em;
+	font-size: 100px;
+	color: #ccc;
+}
+.getleads-testimonials-3 .getleads-testimonials-avatar {
+	float: left;
+	margin: 0 20px;
+}
+.getleads-testimonials-3 .getleads-testimonials-avatar img {
+	margin: 0 auto;
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 4px solid #fff;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+.getleads-testimonials-3 .getleads-testimonials-text {
+	position: relative;
+	margin-left: 150px;
+}
+.getleads-testimonials-3 .getleads-testimonials-author {
+	text-align: right;
+}
+.getleads-testimonials-3 .getleads-testimonials-author .author-name {
+	font-weight: bold;
+	color: #888;
+}
+.getleads-testimonials-3 .getleads-testimonials-author .author-name:before {
+	content: "- ";
+}
+.getleads-testimonials-3 .getleads-testimonials-author em:before,
+.getleads-testimonials-3 .getleads-testimonials-author .getleads-testimonials-url:before {
+	content: " | ";
+}
+.getleads-testimonials-3 .getleads-testimonials-arrows {
+	position: relative;
+	text-align: center;
+}
+.getleads-testimonials-3 .getleads-testimonials-arrows a {
+	margin: 0 10px;
+}
+.getleads-testimonials-4 .getleads-testimonials-arrows {
+	display: none;
+}
+.getleads-testimonials-4 .getleads-testimonials-item {
+	padding-top: 5px;
+}
+.getleads-testimonials-4 .getleads-testimonials-avatar {
+	position: relative;
+	float: left;
+	margin: 0 20px 0 0;
+	width: 120px;
+	height: 120px;
+}
+.getleads-testimonials-4 .getleads-testimonials-avatar img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border: 4px solid #fff;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+.getleads-testimonials-4 .getleads-testimonials-wrapper {
+	position: relative;
+	border-radius: 10px;
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+	padding: 20px;
+	margin-left: 130px;
+}
+.getleads-testimonials-4 .getleads-testimonials-author {
+	text-align: left;
+}
+.getleads-testimonials-4 .getleads-testimonials-author .author-name {
+	font-weight: bold;
+	color: #888;
+}
+.getleads-testimonials-4 .getleads-testimonials-author .author-name:before {
+	content: "- ";
+}
+.getleads-testimonials-4 .getleads-testimonials-author em:before,
+.getleads-testimonials-4 .getleads-testimonials-author .getleads-testimonials-url:before {
+	content: " / ";
+	font-style: normal;
+}
+.getleads-testimonials-4 .getleads-testimonials-pagination {
+	text-align: center;
+	margin-top: 20px;
+}
