@@ -7,6 +7,8 @@
 /**
  * 1.0 - Define constants. Current Version number & Theme Name.
  */
+ 
+  //hello world from functions
 define('GETLEADS_THEME', 'Getleads');
 define('GETLEADS_VERSION', '1.0.18');
 define('GETLEADS_THEMEROOT', get_template_directory_uri());
