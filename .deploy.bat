@@ -4,20 +4,36 @@ REM color 0a
 title Eshop Potichu - Deployment Tool
 
 :CheckIfDeployFeasible
-echo "Check if deploy feasible"
+echo.
+echo.
+echo Check if deploy feasible
+echo ========================
 GOTO PrepareDeploy
 
 :PrepareDeploy
-gulp
+echo.
+echo.
+echo Build app
+echo =========
+call gulp
 GOTO PushToGit
 
 :PushToGit
-echo "Pushing to git"
+echo.
+echo.
+echo Push to git
+echo ===========
+set /p description="Enter commit description: "
+call git commit -m "%description%" -a
 GOTO Deploy
 
 :Deploy
-echo Select Deployment Destination
 echo.
+echo.
+echo Deploy
+echo ======
+echo.
+echo Select deployment destination
 echo 0. beta
 echo 7. eshop.potichu.sk
 echo 8. eshop.potichu.cz
