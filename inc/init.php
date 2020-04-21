@@ -19,7 +19,23 @@ class Getleads_Theme_Includes
 		/**
 		 * Include a file isolated, to not have access to current context variables
 		 */
-		self::$include_isolated_callable = create_function('$path', 'include $path;');
+		 
+		
+		self::$include_isolated_callable = function($path) {
+			include $path;
+		};
+		
+		
+		
+		/*
+		$callbacks[$delimiter] = create_function('$matches', "return '$delimiter' . strtolower(\$matches[1]);");
+		$callbacks[$delimiter] = function($matches) use ($delimiter) {
+			return $delimiter . strtolower($matches[1]);
+		};
+		
+		
+		function ($a, $b) { return "min(b^2+a, a^2,b) = " . min($a * $a + $b, $b * $b + $a); };
+		*/
 
 		/**
 		 * Both frontend and backend

@@ -11,14 +11,16 @@ $options = array(
         'template' => '{{- text }}',
         'popup-options' => array(
             'text' => array(
-                'label' => __('Recognise name', 'getleads'),
-                'desc' => __('Add a name for internal use.', 'getleads'),
+                'label' => __('Name', 'getleads'),
                 'type' => 'text',
             ),
             'images' => array(
-                'label' => __('Slide Image', 'getleads'),
-                'desc' => __('Upload Slide Image.', 'getleads'),
+                'label' => __('Image', 'getleads'),
                 'type' => 'upload',
+            ),
+            'link' => array(
+                'label' => __('Link', 'getleads'),
+                'type' => 'text'
             ),
         )
     ),

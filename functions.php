@@ -7,10 +7,8 @@
 /**
  * 1.0 - Define constants. Current Version number & Theme Name.
  */
- 
-  //hello world from functions
 define('GETLEADS_THEME', 'Getleads');
-define('GETLEADS_VERSION', '1.0.18');
+define('GETLEADS_VERSION', '1.0.36');
 define('GETLEADS_THEMEROOT', get_template_directory_uri());
 define('GETLEADS_IMAGES', GETLEADS_THEMEROOT . '/assets/images');
 define('GETLEADS_CSS', GETLEADS_THEMEROOT . '/assets/css');
@@ -121,16 +119,35 @@ if (!function_exists('getleads_setup')) {
  */
 include_once get_template_directory() .'/inc/init.php';
 
+function insulco_wp_head() {
+	$ogImage = get_the_post_thumbnail_url();
+	
+	if (!$ogImage) {
+		$ogImage = home_url('/wp-content/uploads/static/insulco-og-image.png');
+	}
+    echo '<meta property="og:image" content="' . $ogImage . '">';
+    //echo '<meta property="og:image:type" content="image/png">';
+    //echo '<meta property="og:image:width" content="1024">';
+    //echo '<meta property="og:image:height" content="1024">';
+    echo '<meta property="og:type" content="website" />';
+    echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+	/*
+    echo '<meta property="og:title" content="Website title" />';
+    echo '<meta property="og:description" content="Website description." />';
+	*/
+	
+}
+add_action( 'wp_head', 'insulco_wp_head',11);
+
 
 function enque_insulco_style() {
 	if( WP_DEBUG === true ) { 
-		$version = '1';
+		$version = microtime(true);		
 	} else {
-		$version = microtime(true);
-		die();
+		$version = '9';
 	}
 
-	wp_register_style( 'insulco-style', get_stylesheet_directory_uri() . '/style.css', array(), time());	
+	wp_register_style( 'insulco-style', get_stylesheet_directory_uri() . '/style.css', array(), $version);	
 	wp_enqueue_style( 'insulco-style' );
 }
 	

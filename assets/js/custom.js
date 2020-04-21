@@ -583,9 +583,7 @@
     jQuery('.hidden.cross-fire').remove();
     jQuery('#menu-main-menu').find('.menu-item').removeClass('current-menu-item');
 
-
-
-
+	/*
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -597,6 +595,8 @@
         loop:'true'
         
 
+
     });
+	*/
 
 }); // End jQuery(document).ready Function

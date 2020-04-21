@@ -267,8 +267,11 @@ function _filter_mega_menu_wp_nav_menu_objects($sorted_menu_items, $args) {
         $section = getleads_get_post_meta(getleads_main($item->object_id, false), 'xs_page_section');
 
         if (in_array('menu-item-has-children', $item->classes)) {
-
-            $item->url = '#';
+			
+			if (strpos($item->url, '#') === false)  {
+				$item->url = '#';
+			}
+			
         } else {
             if ($section == 'on') {
                 $item->url = esc_url($prefx . getleads_sectionID(getleads_main($item->object_id, false)));

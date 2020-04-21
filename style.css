@@ -1,6 +1,6 @@
 /**
  *
- * Theme Name: Insulco  
+ * Theme Name: Insulco
  * Version: 1.0
  */
 
@@ -21,7 +21,7 @@ h5 {
 }
 
 .testimonials .big-quote p {
-    font-size: 24px !important;    
+    font-size: 24px !important;
     font-weight: normal;
 }
 
@@ -37,12 +37,12 @@ h5 {
 	background-position: bottom !important;
 }
 
-.home-section-image h1 {    
+.home-section-image h1 {
     color: #0f243e;
 	font-weight: 300;
     font-size: 68px;
     line-height: 80px;
-    margin-bottom: 15px !important;	
+    margin-bottom: 15px !important;
 }
 
 .home-section-image .hero > div { padding-left: 24px !important; }
@@ -50,14 +50,14 @@ h5 {
 .home-section-image .hero  a {
 	display: block;
     text-transform: uppercase;
-    max-width: 300px;	
+    max-width: 300px;
 }
 
 .home-section-image p,
-.insulco-button {	
+.insulco-button {
     font-weight: 400 !important;
     text-transform: uppercase;
-    font-size: 18px;	
+    font-size: 18px;
 	background-color: #9b5a44;
     width: auto;
     max-width: 310px;
@@ -102,7 +102,7 @@ footer.p-y-md {
 
 
 @media screen and (max-width: 991px) {
-	
+
 	.home-section-image { height: 520px !important; }
 	.hero-devices { padding-top: 50px !important; }
 
@@ -114,9 +114,9 @@ footer.p-y-md {
 		max-width: 283px;
 		font-size: 16px;
 	}
-		
 
-		
+
+
 }
 
 
@@ -128,24 +128,24 @@ footer.p-y-md {
 		left: 0;
 		min-height: 340px;
 	}
-	
+
 	.home-banner .text-left,
 	.home-banner .text-right {
 		display: none;
 	}
-	
+
 	.home-section-image .hero a {
 		margin: auto auto;
 	}
-	
+
 	.home-section-image { height: auto !important; }
 	.hero.hero-devices { padding-bottom: 0 !important; }
-	
+
 	.home-section-image {
 		background-size: 180% !important;
 		background-position: top left !important;
 	}
-	
+
 	.hero-devices { padding-top: 0 !important; }
 	.hero-devices .text-left { text-align: center; }
 	.hero-devices p { margin: auto auto; }
@@ -153,7 +153,7 @@ footer.p-y-md {
 
 @media screen and (max-width: 460px) {
 	.home-section-image {
-		background-size: cover !important;		
+		background-size: cover !important;
 	}
 }
 .features-list ul {
@@ -174,7 +174,7 @@ p {
 	color: rgb(105,105,110);
 }
 
-.material-pros ul {    
+.material-pros ul {
     line-height: 25px;
 }
 
@@ -190,7 +190,7 @@ p {
 .efficiency-box {
     padding: 12px 20px;
     background-color: #2fb4e9;
-	color: white;    
+	color: white;
     font-weight: bold;
 	text-align: center;
 	border-radius: 2px;
@@ -213,9 +213,11 @@ p {
 	margin-top: 7px;
 }
 
+/*
 #navbar-collapse li {
 	border-right: 1px solid #d5dae0;
 }
+*/
 
 #navbar-collapse li:last-child {
 	border-right: none;
@@ -234,11 +236,11 @@ p {
 .below-portfolio-item-text .usage {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;    
+    font-size: 12px;
     padding: 5px 10px;
     margin-bottom: 10px;
     color: white;
-} 
+}
 
 .portfolio-item:hover img {
 	transform: scale(1.1,1.1);
@@ -247,9 +249,10 @@ p {
 .btn {
 	background-color: #9b5a44 !important;
 	font-weight: normal !important;
+	border-radius: 0 !important;
 }
 
-a.btn-ghost:hover { color: white !important; }
+/*a.btn-ghost:hover { color: white !important; }*/
 
 .features-list h5 { font-weight: 600 !important; }
 
@@ -257,9 +260,76 @@ a.btn-ghost:hover { color: white !important; }
 	/*border-bottom: 1px solid #834242;*/
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 15px;	
+    font-size: 15px;
 }
 
 .btn.btn-green {
 	border: none;
 }
+
+
+.contact .contact-info li {
+	font-weight: inherit !important;
+	font-size: 18px !important;
+}
+
+.btn:hover {
+	background-color: #af705a !important;
+	transition: none !important;
+}
+.btn.btn-ghost {
+	border: 2px solid #9b5a44;
+	background-color: white !important;
+	font-weight: bold !important;
+	color: #9b5a44;
+	border-radius: 0;
+	transition: none !important;
+}
+
+.btn.btn-ghost:hover {
+	background-color: #9b5a44 !important;
+	border: 2px solid #9b5a44;
+	color: white !important;
+}
+
+.btn.btn-ghost.btn-lg {
+	padding: 10px 16px;
+    letter-spacing: 0;
+}
+
+
+.comments-area,
+.entry-meta {
+	display: none;
+}
+
+
+#features .fw-iconbox .fw-iconbox-image {
+	margin-bottom: 18px;
+    font-size: 25px;
+    background-color: #9b5a44;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    padding-top: 9px;
+}
+
+#features .fw-iconbox h4 {
+	color: #9b5a44;
+    font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+	margin-bottom: 0;
+}
+
+#features .fw-iconbox p {
+	font-size: 14px;
+    margin-top: -8px;
+}
+
+.form-builder-item-recaptcha {
+	margin-bottom: 24px;
+}
+
+article header figure.entry-thumbnail { display: none; }

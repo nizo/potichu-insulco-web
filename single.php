@@ -3,7 +3,6 @@
  * single.php
  *
  * The template for displaying single posts.
- * comment
  */
 $display_settings = array();
 if (defined('FW')) {

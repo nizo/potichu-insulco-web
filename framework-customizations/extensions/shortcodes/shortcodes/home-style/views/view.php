@@ -111,7 +111,7 @@ if ($homepage_styles['homepage_style'] == 'home-1'):
             if (!empty($subtitle)):
                 ?>
 				
-				<a href="#features" class="btn btn-sm text-capitalize">  <?php echo wp_kses_post($subtitle); ?></a>
+				<a href="#konkurencia" class="btn btn-sm text-capitalize">  <?php echo wp_kses_post($subtitle); ?></a>
                 <!--<p class="lead text-white m-b-md"><?php echo wp_kses_post($subtitle); ?></p>-->
 
             <?php endif;
