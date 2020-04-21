@@ -139,7 +139,7 @@ function enque_insulco_style() {
 	if( WP_DEBUG === true ) {
 		$version = microtime(true);
 	} else {
-		$version = '9';
+		$version = '10';
 	}
 
 	wp_register_style( 'insulco-style', get_stylesheet_directory_uri() . '/style.css', array(), $version);
