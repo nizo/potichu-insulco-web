@@ -1,10 +1,6 @@
 <?php
 function contact_form_sent_handler($entryData) {
 	$indexedEntryData = array_values($entryData['form_values']);
-	$name = $indexedEntryData[0];
-	$email = $indexedEntryData[1];
-	$text = $indexedEntryData[2];
-
 	potichu_submit_job_to_pipedrive($indexedEntryData);
 }
 add_action( 'fw:ext:contact-forms:sent', 'contact_form_sent_handler', 10, 1 );
@@ -23,18 +19,6 @@ function potichu_submit_job_to_pipedrive($jobDetails) {
 	$handlerId = get_option( 'pipedrive_handler_person_id', '');
 	$stageId = get_option( 'pipedrive_stage_id', '');
 
-	/*
-	if (get_option('web_locale', 'sk') === 'sk') {
-		$api_token = '4fae12d61eae55ca09ad67d09202559d01349afd';
-		$handlerId = 2479848;
-		$cityId = 'd939ca8cc6a11101553489d9bd2c9fc84c2930ec';
-	} else {
-		$api_token = '2dbe5a7e699f15990b5b8fccda79a90ba19af617';
-		$handlerId = 3086675;
-		$cityId = '3635d1573043f91389788ea00ba3a30caa36ac31';
-	}
-	*/
-
 	$name = $jobDetails[0];
 	$email = $jobDetails[1];
 	$note = $jobDetails[2];
@@ -45,10 +29,10 @@ function potichu_submit_job_to_pipedrive($jobDetails) {
 	);
 
 	$deal = array(
-		'title' => $name . ' - formulár',
+		'title' => $name . ' - formulár INSULCO',
 		'user_id' => $handlerId
 	);
-	
+
 	$person_id = get_person_id($api_token, $person);
 
 	// if the person was added successfully add the deal and link it to the organization and the person
@@ -56,10 +40,6 @@ function potichu_submit_job_to_pipedrive($jobDetails) {
 		$deal['person_id'] = $person_id;
 		// try adding a person and get back the ID
 		$deal_id = create_deal($api_token, $deal);
-
-		if ($deal_id) {
-			echo "<br/>Deal added successfully!";
-		}
 
 		$activity = array(
 			'subject' => 'Dopyt z webstránky - INSULCO',
@@ -72,11 +52,6 @@ function potichu_submit_job_to_pipedrive($jobDetails) {
 
 		// try setting activity to a deal
 		$activity_id = add_activity($api_token, $activity);
-		if ($activity_id) {
-			echo "<br/>Activity added successfully!";
-		}
-	} else {
-		echo "There was a problem with adding the person!";
 	}
 }
 
