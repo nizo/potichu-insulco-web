@@ -1,4 +1,7 @@
 <?php
+
+include 'functions-pipedrive.php';
+
 /**
  * functions.php
  *
@@ -23,11 +26,6 @@ define('GETLEADS_PHPSCRIPTS', GETLEADS_THEMEROOT . '/assets/php');
 if (!isset($content_width)) {
     $content_width = 800;
 }
-
-
-
-
-
 
 /**
  * ----------------------------------------------------------------------------------------
@@ -188,12 +186,48 @@ function insulco_web_settings_register( $wp_customize ) {
 		'transport'	=> 'refresh',
 	));
 
+	$wp_customize->add_setting( 'use_pipedrive' , array(
+		'type'		=> 'option',
+		'default'	=> false,
+		'transport'	=> 'refresh',
+	));
+
+	$wp_customize->add_setting( 'pipedrive_api_token' , array(
+		'type'		=> 'option',
+		'default'	=> '',
+		'transport'	=> 'refresh',
+	));
+
+	$wp_customize->add_setting( 'pipedrive_handler_person_id' , array(
+		'type'		=> 'option',
+		'default'	=> '',
+		'transport'	=> 'refresh',
+	));
+
+	$wp_customize->add_setting( 'pipedrive_city_id' , array(
+		'type'		=> 'option',
+		'default'	=> '',
+		'transport'	=> 'refresh',
+	));
+
+	$wp_customize->add_setting( 'pipedrive_stage_id' , array(
+		'type'		=> 'option',
+		'default'	=> '',
+		'transport'	=> 'refresh',
+	));
+
 	// Sections
 	$wp_customize->add_section( 'web_settings_section' , array(
 		'title'      => 'Insulco',
 		'priority'   => 1000,
 	) );
 
+	$wp_customize->add_section( 'pipedrive_section' , array(
+		'title'      => 'Pipedrive',
+		'priority'   => 1001,
+	) );
+
+	// Controls
 	$wp_customize->add_control(
 		'google_tag_manager_head_control',
 		array(
@@ -221,6 +255,58 @@ function insulco_web_settings_register( $wp_customize ) {
 			'section'  => 'web_settings_section',
 			'settings' => 'pixel_tracking_code',
 			'type'     => 'textarea'
+		)
+	);
+
+	// pipedrive section
+	$wp_customize->add_control(
+		'use_pipedrive_control',
+		array(
+			'label'    => 'Enabled',
+			'section'  => 'pipedrive_section',
+			'settings' => 'use_pipedrive',
+			'type'     => 'checkbox'
+		)
+	);
+
+	$wp_customize->add_control(
+		'pipedrive_api_token_control',
+		array(
+			'label'    => 'Token',
+			'section'  => 'pipedrive_section',
+			'settings' => 'pipedrive_api_token',
+			'type'     => 'text'
+		)
+	);
+
+	$wp_customize->add_control(
+		'pipedrive_handler_person_id_control',
+		array(
+			'label'    => 'Assign to user ID',
+			'section'  => 'pipedrive_section',
+			'settings' => 'pipedrive_handler_person_id',
+			'type'     => 'text'
+		)
+	);
+
+	$wp_customize->add_control(
+		'pipedrive_city_id_control',
+		array(
+			'label'    => 'City ID',
+			'section'  => 'pipedrive_section',
+			'settings' => 'pipedrive_city_id',
+			'type'     => 'text'
+		)
+	);
+
+
+	$wp_customize->add_control(
+		'pipedrive_stage_id_control',
+		array(
+			'label'    => 'Stage ID',
+			'section'  => 'pipedrive_section',
+			'settings' => 'pipedrive_stage_id',
+			'type'     => 'text'
 		)
 	);
 }
